@@ -19,7 +19,7 @@ cloudpickle==0.2.2
 clyent==1.2.2
 colorama==0.3.7
 comtypes==1.1.2
-conda==4.3.8
+conda==4.3.30
 configobj==5.0.6
 contextlib2==0.5.4
 cryptography==1.7.1

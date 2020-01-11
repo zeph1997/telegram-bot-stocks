@@ -1,1 +1,1 @@
-server:/start
+worker:python mainProg.py

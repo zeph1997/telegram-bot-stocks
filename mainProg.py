@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import requests
 from firebase import firebase
 
-TOKEN = "Your Token Here"
+TOKEN = "1014923565:AAHtX-ox1Lk7cxXcdCe3M4ic5KJ4FAGLTxc"
 
 #set up firebase connection
-firebase = firebase.FirebaseApplication("",None)
+firebase = firebase.FirebaseApplication("https://telebotstocks-58c84.firebaseio.com/",None)
 
 
 

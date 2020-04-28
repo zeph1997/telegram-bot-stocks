@@ -79,20 +79,20 @@ def get_price(messageO):
         message += f"Price of {i} \n${price}, {timing} \n"
     bot.send_message(messageO.chat.id,message)
 
-@bot.message_handler(commands=["memethis"])
-def find_meme(messageO):
-    message = messageO.text.split()
-    bot.send_message(messageO.chat.id,f"Getting the meme for {message[1]}")
-    url = 
-    response = requests.get(url)
-    print(response.content)
-    soup = BeautifulSoup(response.content,"html.parser")
-    # shortlist = soup.find_all("table",class_="entry_list")
-    print(shortlist)
-    # manyData = json.dumps(data,sort_keys=True)
-    # manyDataDict = eval(manyData)
-    # bot.send_video(messageO.chat.id,manyDataDict["data"][0]["url"])
-    # print(manyDataDict["data"][0]["url"])
+# @bot.message_handler(commands=["memethis"])
+# def find_meme(messageO):
+#     message = messageO.text.split()
+#     bot.send_message(messageO.chat.id,f"Getting the meme for {message[1]}")
+#     url = 
+#     response = requests.get(url)
+#     print(response.content)
+#     soup = BeautifulSoup(response.content,"html.parser")
+#     # shortlist = soup.find_all("table",class_="entry_list")
+#     print(shortlist)
+#     # manyData = json.dumps(data,sort_keys=True)
+#     # manyDataDict = eval(manyData)
+#     # bot.send_video(messageO.chat.id,manyDataDict["data"][0]["url"])
+#     # print(manyDataDict["data"][0]["url"])
 
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
